@@ -34,7 +34,7 @@ L'application est divisée en plusieurs étapes :
 Clonez le dépôt :
 
 ```bash
-git clone <url-du-dépôt>
+git clone https://github.com/AnisMobile99/vehicle-fleet-management.git
 cd VehicleFleetManagement
 ```
 
