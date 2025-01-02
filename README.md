@@ -118,22 +118,6 @@ Pour exécuter les tests BDD :
 npm run bdd-test
 ```
 
-## Qualité du code
-
-L'analyse statique du code est assurée par **ESLint**. Pour exécuter le linter :
-
-```bash
-npm run lint
-```
-
-## Pipeline CI/CD
-
-Un pipeline CI/CD est configuré avec GitHub Actions pour :
-
-- Vérifier la qualité du code avec ESLint.
-- Exécuter les tests unitaires.
-
-Le fichier de configuration se trouve dans `.github/workflows/ci.yml`.
 
 ## Structure du projet
 
@@ -149,6 +133,27 @@ features/
 step_definitions/
    *.js    # Définition des étapes pour les tests BDD
 ```
+
+## Step3 ( Bonus ) : 
+1. Outils pour la qualité du code :
+Pour garantir une qualité de code élevée, je recommande les outils suivants :
+
+ESLint : Assure des normes de codage cohérentes en détectant et corrigeant les erreurs de syntaxe et les problèmes de style.
+Prettier : Formate automatiquement le code pour maintenir un style uniforme, réduisant les conflits dans les pull requests.
+Jest : Un framework de tests pour écrire et exécuter des tests unitaires et d'intégration, garantissant la fiabilité du code.
+Husky : S'intègre à Git pour imposer des hooks pre-commit et pre-push, exécutant automatiquement des scripts de linting et de tests pour empêcher la soumission de code de mauvaise qualité.
+SonarQube : Analyse statique du code pour détecter les vulnérabilités, les bugs et les mauvaises pratiques, assurant le respect des normes de sécurité et de qualité.
+Ces outils améliorent collectivement la lisibilité, la fiabilité et la maintenabilité du code, tout en identifiant proactivement les problèmes avant le déploiement.
+
+2. Mise en place d’un processus CI/CD :
+Pour configurer un processus CI/CD efficace, voici les étapes à suivre :
+
+Vérifications de qualité du code : Intégrez ESLint, Prettier et SonarQube dans le pipeline CI pour analyser automatiquement la qualité du code et appliquer les standards.
+Hooks pre-commit : Utilisez Husky pour imposer des hooks pre-commit qui exécutent le linting et les tests avant chaque commit.
+Tests automatisés : Ajoutez Jest au pipeline CI pour exécuter les tests unitaires et d'intégration (npm test) et s’assurer que les modifications n’introduisent pas de bugs.
+Build et packaging : Utilisez Docker pour créer des artefacts de build cohérents pour les environnements de staging et de production.
+Déploiement : Déployez les modifications dans des environnements de staging ou de production via GitHub Actions, GitLab CI ou un outil dédié comme AWS CodePipeline.
+
 
 ## Contributeurs
 
