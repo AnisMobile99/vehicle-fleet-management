@@ -1,40 +1,5 @@
 [
   {
-    "id": "fleet5",
-    "vehicles": {
-      "ABC-13434333": {
-        "plateNumber": "ABC-13434333"
-      }
-    },
-    "locations": {
-      "ABC-13434333": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "alt": 0
-      }
-    }
-  },
-  {
-    "id": "fleet10",
-    "vehicles": {},
-    "locations": {}
-  },
-  {
-    "id": "fleet1",
-    "vehicles": {
-      "ABC-123": {
-        "plateNumber": "ABC-123"
-      }
-    },
-    "locations": {
-      "ABC-123": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "alt": 35
-      }
-    }
-  },
-  {
     "id": "fleetTest",
     "vehicles": {
       "ABC-123": {
@@ -50,8 +15,12 @@
     }
   },
   {
-    "id": "fleetDjo",
-    "vehicles": {},
+    "id": "fleet1",
+    "vehicles": {
+      "ABC-123": {
+        "plateNumber": "ABC-123"
+      }
+    },
     "locations": {}
   }
 ]
